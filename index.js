@@ -5,7 +5,8 @@ const { dbConnection } = require("./config/config");
 const routes = require("./routes");
 const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
-
+const cors = require("cors");
+app.use(cors());
 app.use(express.json());
 
 // Swagger
